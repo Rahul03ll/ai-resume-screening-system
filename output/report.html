@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Resume Screening & Ranking Report</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 24px; background: #f8fafc; color: #0f172a; }
+h1, h2 { color: #1e293b; }
+.stats { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+.stat-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px 20px; min-width: 140px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+.stat-card .num { font-size: 24px; font-weight: 700; color: #2563eb; }
+.stat-card .label { font-size: 12px; color: #64748b; text-transform: uppercase; }
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 32px; }
+th, td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #e2e8f0; vertical-align: top; font-size: 14px; }
+th { background: #f1f5f9; font-weight: 600; color: #334155; }
+.rank { font-weight: 700; color: #1d4ed8; font-size: 16px; width: 48px; }
+.score { font-weight: 800; font-size: 18px; color: #059669; width: 80px; }
+.breakdown { display: flex; flex-direction: column; gap: 2px; font-size: 12px; min-width: 125px; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 600; }
+.badge-warn { background: #fef3c7; color: #92400e; }
+.badge-reject { background: #fee2e2; color: #991b1b; }
+.summary { margin-bottom: 6px; color: #1e293b; }
+.meta { font-size: 12px; color: #475569; margin-top: 2px; }
+</style>
+</head>
+<body>
+<h1>AI Resume Screening & Ranking Report</h1>
+<div class="stats">
+  <div class="stat-card"><div class="num">50</div><div class="label">Total Resumes</div></div>
+  <div class="stat-card"><div class="num">50</div><div class="label">Parsed</div></div>
+  <div class="stat-card"><div class="num">31</div><div class="label">Eligible</div></div>
+  <div class="stat-card"><div class="num">19</div><div class="label">Rejected</div></div>
+  <div class="stat-card"><div class="num">0</div><div class="label">Failed / Unreadable</div></div>
+  <div class="stat-card"><div class="num">29</div><div class="label">GitHub Enriched</div></div>
+</div>
+<h2>Ranked Eligible Candidates (31)</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Candidate</th>
+      <th>Total</th>
+      <th>Breakdown</th>
+      <th>Matched Skills</th>
+      <th>Evidence Summary, Strengths & Concerns</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+            <tr>
+                <td class="rank">#1</td>
+                <td>
+                    <strong>Yash Maini</strong><br>
+                    <small>candidate_13.pdf | <a href="https://github.com/Yashmaini30" target="_blank">Yashmaini30</a></small><br>
+                    
+                </td>
+                <td class="score">92<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>38</b>/40</span>
+                        <span>Py/BE: <b>28</b>/30</span>
+                        <span>Cloud/FS: <b>12</b>/15</span>
+                        <span>GitHub: <b>10</b>/10</span>
+                        <span>Eng: <b>4</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, Flask, Asyncio, PostgreSQL, SQL, REST APIs, LangChain, LangGraph, RAG</small></td>
+                <td>
+                    <div class="summary">Built a production-grade LLM voice agent with sub-600 ms latency, a multi-agent orchestration SDK, and an 11-tool LangGraph copilot integrating Salesforce, all backed by async Python, PostgreSQL, and vector search.</div>
+                    <div class="meta"><b>Strengths:</b> Deep AI system design; Async Python performance; Full-stack cloud ops; Robust testing &amp; observability</div>
+                    <div class="meta"><b>Concerns:</b> Front-end integration not demonstrated; No Redis experience</div>
+                    <div class="meta"><b>GitHub:</b> @Yashmaini30: 45 maintained public repos, 29 Python/AI-relevant repos (e.g., face-verification-resnet50, pg-reliability-agent, glove-detection-yolo, LangChain-with-Python); last push 2026-09-19, 5 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#2</td>
+                <td>
+                    <strong>Prathamesh Patil</strong><br>
+                    <small>candidate_35.pdf | <a href="https://github.com/Prathameshh-Patil" target="_blank">Prathameshh-Patil</a></small><br>
+                    
+                </td>
+                <td class="score">90<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>34</b>/40</span>
+                        <span>Py/BE: <b>29</b>/30</span>
+                        <span>Cloud/FS: <b>14</b>/15</span>
+                        <span>GitHub: <b>8</b>/10</span>
+                        <span>Eng: <b>5</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, PostgreSQL, Redis, SQL, REST APIs, Pydantic, Celery, LangGraph, RAG</small></td>
+                <td>
+                    <div class="summary">Candidate built a production-grade multi-agent RAG system using LangGraph, pgvector, and Kafka with self-correction loops, alongside a scalable AI SaaS boilerplate featuring Celery, Redis, and gRPC.</div>
+                    <div class="meta"><b>Strengths:</b> Deep LangGraph and RAG implementation with state management and evaluation; Strong backend stack including FastAPI, Celery, and PostgreSQL/pgvector; Production observability and CI/CD experience with Kubernetes and AWS; Active GitHub (@Prathameshh-Patil, 11 Python/AI repos)</div>
+                    <div class="meta"><b>Concerns:</b> Some metrics (e.g., 35% latency reduction) may be difficult to verify without code artifacts; Heavy reliance on managed LLM APIs (Groq/Gemini) rather than local model fine-tuning</div>
+                    <div class="meta"><b>GitHub:</b> @Prathameshh-Patil: 14 maintained public repos, 11 Python/AI-relevant repos (e.g., Intelligent-Loan-Document-Processing, ai-saas-kit, AdaptiveAgentic-RAG, Agent-Skill-Manager); last push 2026-08-07, 1 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#3</td>
+                <td>
+                    <strong>V Sree Raghu Vardhan</strong><br>
+                    <small>candidate_30.pdf | <a href="https://github.com/raghuvardhan07" target="_blank">raghuvardhan07</a></small><br>
+                    
+                </td>
+                <td class="score">87<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>33</b>/40</span>
+                        <span>Py/BE: <b>28</b>/30</span>
+                        <span>Cloud/FS: <b>14</b>/15</span>
+                        <span>GitHub: <b>8</b>/10</span>
+                        <span>Eng: <b>4</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, Django, Asyncio, PostgreSQL, Redis, SQL, REST APIs, Pydantic, LangChain</small></td>
+                <td>
+                    <div class="summary">Built production AI agent workflows with LangChain and Azure OpenAI, integrating Redis-backed state management, semantic retrieval pipelines, and LangSmith evaluation to deliver robust RAG-enabled HRMS services.</div>
+                    <div class="meta"><b>Strengths:</b> AI agent orchestration; Backend scalability; Testing &amp; CI/CD; Full-stack integration</div>
+                    <div class="meta"><b>Concerns:</b> Limited explicit vector DB usage; No explicit Kubernetes deployment details; No queue system mentioned</div>
+                    <div class="meta"><b>GitHub:</b> @raghuvardhan07: 28 maintained public repos, 1 Python/AI-relevant repos (e.g., wexa-ai-assignment); last push 2026-09-24, 5 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#4</td>
+                <td>
+                    <strong>Jyandeep Baishya</strong><br>
+                    <small>candidate_07.pdf | <a href="https://github.com/ZyanHere" target="_blank">ZyanHere</a></small><br>
+                    
+                </td>
+                <td class="score">84<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>36</b>/40</span>
+                        <span>Py/BE: <b>26</b>/30</span>
+                        <span>Cloud/FS: <b>10</b>/15</span>
+                        <span>GitHub: <b>10</b>/10</span>
+                        <span>Eng: <b>2</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, Redis, REST APIs, Pydantic, LangChain, LangGraph, MCP, RAG, AI Agents</small></td>
+                <td>
+                    <div class="summary">Built multi-agent LangGraph RAG assistants with stateful Redis persistence, hybrid Elasticsearch retrieval, and SSE streaming, and engineered a LangGraph-driven notebook mind-map with tool-calling and async FastAPI APIs.</div>
+                    <div class="meta"><b>Strengths:</b> Deep experience with LangGraph multi-agent orchestration; Strong async FastAPI and SSE implementations; Full-stack integration of React/Next.js with AI back-ends; Proven system design reducing payload size dramatically</div>
+                    <div class="meta"><b>Concerns:</b> No explicit mention of PostgreSQL or relational DB experience; Limited evidence of CI/CD, Docker/Kubernetes usage; Testing and observability practices not highlighted</div>
+                    <div class="meta"><b>GitHub:</b> @ZyanHere: 44 maintained public repos, 9 Python/AI-relevant repos (e.g., Zyan-is-RAGged, Zyan-analyzing-biomech, Zyan-creating-notes, Zyan_agent_for_roadmap); last push 2026-10-07, 6 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#5</td>
+                <td>
+                    <strong>Gourab Das</strong><br>
+                    <small>candidate_17.pdf | <a href="https://github.com/gdas37467" target="_blank">gdas37467</a></small><br>
+                    
+                </td>
+                <td class="score">84<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>33</b>/40</span>
+                        <span>Py/BE: <b>28</b>/30</span>
+                        <span>Cloud/FS: <b>12</b>/15</span>
+                        <span>GitHub: <b>6</b>/10</span>
+                        <span>Eng: <b>5</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, Django, Flask, PostgreSQL, Redis, SQL, REST APIs, LangChain, LangGraph</small></td>
+                <td>
+                    <div class="summary">Built production-grade AI agents using LangGraph with tool calling (SQL/OpenSearch) and optimized RAG pipelines with Milvus, reranking, and chunking fixes. Developed high-scale backend systems using FastAPI/Django, Kafka, and ClickHouse for multi-tenant law enforcement analytics.</div>
+                    <div class="meta"><b>Strengths:</b> Deep LangGraph implementation with tool-augmented agents; Production RAG optimization (Milvus, reranking, chunking); Strong backend engineering with Kafka and multi-tenancy; Large-scale data analytics experience (ClickHouse, Neo4j)</div>
+                    <div class="meta"><b>Concerns:</b> Recent role start date (Nov 2025) may indicate very limited tenure; Heavy reliance on Java/Spring Boot in previous role may dilute Python focus</div>
+                    <div class="meta"><b>GitHub:</b> @gdas37467: 12 maintained public repos, 1 Python/AI-relevant repos (e.g., zupay); last push 2026-09-20, 1 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#6</td>
+                <td>
+                    <strong>Hari Shanker Sharma</strong><br>
+                    <small>candidate_41.pdf | <a href="https://github.com/triggered-exe" target="_blank">triggered-exe</a></small><br>
+                    
+                </td>
+                <td class="score">83<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>32</b>/40</span>
+                        <span>Py/BE: <b>26</b>/30</span>
+                        <span>Cloud/FS: <b>13</b>/15</span>
+                        <span>GitHub: <b>8</b>/10</span>
+                        <span>Eng: <b>4</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, PostgreSQL, Redis, SQL, REST APIs, LangChain, LangGraph, MCP, RAG</small></td>
+                <td>
+                    <div class="summary">Candidate built four production AI SaaS platforms featuring LangGraph-based agent orchestration, RAG pipelines with Qdrant, and SSE streaming for sub-200ms latency, supported by FastAPI, PostgreSQL, and Docker/Kubernetes deployments.</div>
+                    <div class="meta"><b>Strengths:</b> Production-scale AI agent orchestration using LangGraph and MCP; High-performance streaming APIs with sub-200ms latency; End-to-end ownership of multi-tenant SaaS backends; Robust CI/CD and testing practices with GitHub Actions and pytest</div>
+                    <div class="meta"><b>Concerns:</b> Heavy reliance on MongoDB in summary despite PostgreSQL in skills; Limited detail on specific vector DB optimization or reranking strategies; Some project descriptions focus on feature breadth over deep architectural trade-offs</div>
+                    <div class="meta"><b>GitHub:</b> @triggered-exe: 29 maintained public repos, 3 Python/AI-relevant repos (e.g., bug-tracker, gen-ai-nxtwave, todos); last push 2026-08-25, 2 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#7</td>
+                <td>
+                    <strong>PRAJWAL A S</strong><br>
+                    <small>candidate_22.pdf | <a href="https://github.com/prajwalas1" target="_blank">prajwalas1</a></small><br>
+                    
+                </td>
+                <td class="score">82<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>39</b>/40</span>
+                        <span>Py/BE: <b>27</b>/30</span>
+                        <span>Cloud/FS: <b>4</b>/15</span>
+                        <span>GitHub: <b>9</b>/10</span>
+                        <span>Eng: <b>3</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, Flask, Asyncio, PostgreSQL, SQL, REST APIs, Pydantic, SQLAlchemy, LangChain</small></td>
+                <td>
+                    <div class="summary">Designed and deployed a 7-stage async FastAPI NL-to-SQL AI agent with RAG, tool-calling, pgvector embeddings and self-hosted LLMs, plus a real-time multilingual voice AI assistant that grounds every LLM action in FastAPI/PostgreSQL calls.</div>
+                    <div class="meta"><b>Strengths:</b> Deep experience building end-to-end GenAI pipelines; Strong async FastAPI and PostgreSQL architecture; Proven performance on large-scale HPC telemetry; Hands-on with self-hosted LLM inference and vector DBs</div>
+                    <div class="meta"><b>Concerns:</b> No explicit cloud platform (GCP/AWS/Azure) experience; Limited mention of CI/CD or containerization; No clear evidence of automated testing frameworks</div>
+                    <div class="meta"><b>GitHub:</b> @prajwalas1: 31 maintained public repos, 6 Python/AI-relevant repos (e.g., voice-ai-backend, voice-ai-frontend, python-low-level-design, medical-ai-assistant); last push 2026-08-07, 4 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#8</td>
+                <td>
+                    <strong>Sumaiya Sultana Shaik</strong><br>
+                    <small>candidate_28.pdf | <a href="https://github.com/sumaiya226" target="_blank">sumaiya226</a></small><br>
+                    
+                </td>
+                <td class="score">82<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>30</b>/40</span>
+                        <span>Py/BE: <b>26</b>/30</span>
+                        <span>Cloud/FS: <b>13</b>/15</span>
+                        <span>GitHub: <b>10</b>/10</span>
+                        <span>Eng: <b>3</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, PostgreSQL, SQL, REST APIs, GraphQL, LangChain, LangGraph, RAG, AI Agents</small></td>
+                <td>
+                    <div class="summary">Built production-grade FastAPI backends with RBAC and OAuth, and delivered AI-augmented systems including a multi-agent document generator, a RAG-based financial planner, and a LangChain-orchestrated LLM remediation service.</div>
+                    <div class="meta"><b>Strengths:</b> End-to-end AI-augmented backend systems; Production experience with FastAPI, RBAC, and GCP; Agentic and RAG implementations using LangChain/Graph; Solid testing and CI/CD practices</div>
+                    <div class="meta"><b>Concerns:</b> Limited mention of async/concurrency patterns; No explicit experience with Kubernetes or advanced observability; Primary AI work limited to prototypes rather than large-scale deployment</div>
+                    <div class="meta"><b>GitHub:</b> @sumaiya226: 29 maintained public repos, 13 Python/AI-relevant repos (e.g., skillmap-agent, docuchat-agent, study-assistant, technical-assignment); last push 2026-09-13, 5 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#9</td>
+                <td>
+                    <strong>Vaibhav Wakde</strong><br>
+                    <small>candidate_33.pdf | <a href="https://github.com/vaibhavw1" target="_blank">vaibhavw1</a></small><br>
+                    
+                </td>
+                <td class="score">80<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>35</b>/40</span>
+                        <span>Py/BE: <b>24</b>/30</span>
+                        <span>Cloud/FS: <b>10</b>/15</span>
+                        <span>GitHub: <b>8</b>/10</span>
+                        <span>Eng: <b>3</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, Flask, Asyncio, SQL, REST APIs, LangChain, LangGraph, LlamaIndex, RAG</small></td>
+                <td>
+                    <div class="summary">Built multiple end-to-end AI systems - including an invoice-analysis platform with RAG and Weaviate, a LangGraph-driven healthcare CRM agent, and an offline Android chatbot - integrating async FastAPI/Flask backends, vector search, and tool-calling workflows.</div>
+                    <div class="meta"><b>Strengths:</b> Strong RAG and vector-DB experience (Weaviate, ChromaDB); Proficient in async Python backends (FastAPI, Flask); Hands-on with LangChain/LangGraph tool-calling pipelines; Demonstrated deployment skills (Docker, AWS)</div>
+                    <div class="meta"><b>Concerns:</b> No explicit PostgreSQL experience; uses MySQL/SQLite; Limited evidence of CI/CD pipelines or Kubernetes; Observability and monitoring not highlighted</div>
+                    <div class="meta"><b>GitHub:</b> @vaibhavw1: 10 maintained public repos, 3 Python/AI-relevant repos (e.g., AI-First-CRM-HCP-Module, reimbursement-agent, job-search-assistance); last push 2026-09-16, 2 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#10</td>
+                <td>
+                    <strong>Nevil Jasmin Mehta</strong><br>
+                    <small>candidate_50.pdf | <a href="https://github.com/Nevilmehta" target="_blank">Nevilmehta</a></small><br>
+                    
+                </td>
+                <td class="score">80<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>26</b>/40</span>
+                        <span>Py/BE: <b>28</b>/30</span>
+                        <span>Cloud/FS: <b>12</b>/15</span>
+                        <span>GitHub: <b>10</b>/10</span>
+                        <span>Eng: <b>4</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, Django, Flask, PostgreSQL, Redis, SQL, REST APIs, Celery, RAG</small></td>
+                <td>
+                    <div class="summary">Nevil built a production-ready RAG platform with FastAPI, Redis, Celery, pgvector, and LLMs, delivering async retrieval and vector search, and also developed a real-time sentiment analysis app using transformer models and Streamlit.</div>
+                    <div class="meta"><b>Strengths:</b> Deep RAG &amp; vector-DB integration; Async FastAPI &amp; Celery architecture; AWS-ready Docker deployment; Full-stack React &amp; Streamlit UI</div>
+                    <div class="meta"><b>Concerns:</b> Limited Kubernetes / CI-CD detail; No explicit unit-test coverage shown; No microservices or multi-tenant architecture evidence</div>
+                    <div class="meta"><b>GitHub:</b> @Nevilmehta: 19 maintained public repos, 17 Python/AI-relevant repos (e.g., neetcode-submissions, stocks-ai, Memory-Garden, personal-ai-assistant); last push 2026-10-03, 3 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#11</td>
+                <td>
+                    <strong>Vivek Chimnani</strong><br>
+                    <small>candidate_44.pdf | <a href="https://github.com/Vivekk-11" target="_blank">Vivekk-11</a></small><br>
+                    
+                </td>
+                <td class="score">77<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>26</b>/40</span>
+                        <span>Py/BE: <b>29</b>/30</span>
+                        <span>Cloud/FS: <b>12</b>/15</span>
+                        <span>GitHub: <b>8</b>/10</span>
+                        <span>Eng: <b>2</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, PostgreSQL, Redis, REST APIs, LangGraph, AWS, Docker, CI/CD, React</small></td>
+                <td>
+                    <div class="summary">Built a production-grade AI research assistant using LangGraph and FastAPI that orchestrates multi-node planning, analysis, and report generation with shared graph state and session persistence, and designed event-driven backend services with FastAPI, PostgreSQL, Redis, and WebSocket real-time pipelines for DeFi and launchpad applications.</div>
+                    <div class="meta"><b>Strengths:</b> Deep AI workflow design; Event-driven backend architecture; Full-stack React/Next.js integration; Scalable asynchronous infrastructure</div>
+                    <div class="meta"><b>Concerns:</b> Limited explicit testing/observability details; No Kubernetes or GCP usage; No vector DB or RAG implementation</div>
+                    <div class="meta"><b>GitHub:</b> @Vivekk-11: 63 maintained public repos, 5 Python/AI-relevant repos (e.g., Dossier, Blow-up-Bot-Smart-Contract, Todos_project_fastapi, Fastapi_books_project-2); last push 2026-09-17, 1 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#12</td>
+                <td>
+                    <strong>PRIYANSHU KUMAR</strong><br>
+                    <small>candidate_16.pdf | <a href="https://github.com/pkr2805" target="_blank">pkr2805</a></small><br>
+                    
+                </td>
+                <td class="score">73<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>34</b>/40</span>
+                        <span>Py/BE: <b>26</b>/30</span>
+                        <span>Cloud/FS: <b>5</b>/15</span>
+                        <span>GitHub: <b>6</b>/10</span>
+                        <span>Eng: <b>2</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, PostgreSQL, SQL, LangChain, LangGraph, CrewAI, MCP, RAG, AI Agents</small></td>
+                <td>
+                    <div class="summary">Designed and deployed multi-agent LangGraph architectures for AI-driven RFP automation and PR Sentinel, integrating tool calling, RAG with Pinecone, and real-time decision making, while building scalable FastAPI backends with PostgreSQL and Kafka.</div>
+                    <div class="meta"><b>Strengths:</b> Deep AI system design; Full-stack integration; LangGraph &amp; CrewAI expertise; Async job orchestration</div>
+                    <div class="meta"><b>Concerns:</b> Limited cloud deployment experience; No explicit testing/observability; No Redis usage</div>
+                    <div class="meta"><b>GitHub:</b> @pkr2805: 9 maintained public repos, 5 Python/AI-relevant repos (e.g., PR-Sentinel-AI, gv, aproj, resume-skill-extractor); last push 2026-03-01, 0 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#13</td>
+                <td>
+                    <strong>ARUNIMA SAHA</strong><br>
+                    <small>candidate_43.pdf | —</small><br>
+                    
+                </td>
+                <td class="score">73<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>34</b>/40</span>
+                        <span>Py/BE: <b>25</b>/30</span>
+                        <span>Cloud/FS: <b>12</b>/15</span>
+                        <span>GitHub: <b>0</b>/10</span>
+                        <span>Eng: <b>2</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, PostgreSQL, SQL, REST APIs, Pydantic, LangChain, LangGraph, RAG, AI Agents</small></td>
+                <td>
+                    <div class="summary">Built a multi-agent travel planning system with LangGraph state management, integrated real-time flight/hotel APIs, and deployed via FastAPI on AWS EKS, plus a Graph RAG assistant using Neo4j and vector stores.</div>
+                    <div class="meta"><b>Strengths:</b> Deep experience with LangChain/LangGraph and stateful agent orchestration; Production-grade backend using Python, FastAPI, PostgreSQL, Docker, and AWS; Strong RAG expertise with pgvector, Pinecone, and evaluation (RAGAS)</div>
+                    <div class="meta"><b>Concerns:</b> Limited explicit mention of automated testing frameworks; No clear CI/CD pipeline description; Missing or unverifiable public GitHub profile</div>
+                    <div class="meta"><b>GitHub:</b> No public GitHub profile URL found on resume.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#14</td>
+                <td>
+                    <strong>Kiran Naregal</strong><br>
+                    <small>candidate_47.pdf | <a href="https://github.com/kiran-naregal" target="_blank">kiran-naregal</a></small><br>
+                    
+                </td>
+                <td class="score">73<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>34</b>/40</span>
+                        <span>Py/BE: <b>20</b>/30</span>
+                        <span>Cloud/FS: <b>12</b>/15</span>
+                        <span>GitHub: <b>5</b>/10</span>
+                        <span>Eng: <b>2</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, SQL, Pydantic, LangChain, LangGraph, RAG, AI Agents, OpenAI API, Ollama</small></td>
+                <td>
+                    <div class="summary">Candidate demonstrates strong AI engineering depth through a production RAG pipeline using Docling/OCR and a multi-agent code review system built with LangGraph, featuring supervisor orchestration and provider-agnostic LLM abstraction. Backend work includes FastAPI services with Pydantic validation and AWS serverless workflows.</div>
+                    <div class="meta"><b>Strengths:</b> LangGraph multi-agent orchestration with supervisor pattern; Production RAG pipeline with OCR and structured data extraction; FastAPI backend with Pydantic validation and logging; AWS serverless architecture experience</div>
+                    <div class="meta"><b>Concerns:</b> Limited evidence of vector database implementation details (e.g., pgvector/Qdrant); No explicit mention of testing frameworks like pytest; Recent experience is very new (July 2025), limited long-term project history</div>
+                    <div class="meta"><b>GitHub:</b> @kiran-naregal: 8 maintained public repos, 1 Python/AI-relevant repos (e.g., code-review-agent); last push 2026-08-18, 1 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#15</td>
+                <td>
+                    <strong>Aditi Kala</strong><br>
+                    <small>candidate_37.pdf | <a href="https://github.com/why-aditi" target="_blank">why-aditi</a></small><br>
+                    
+                </td>
+                <td class="score">73<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>30</b>/40</span>
+                        <span>Py/BE: <b>20</b>/30</span>
+                        <span>Cloud/FS: <b>11</b>/15</span>
+                        <span>GitHub: <b>10</b>/10</span>
+                        <span>Eng: <b>2</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, Flask, PostgreSQL, SQL, Gemini, PyTorch, TensorFlow, GCP, Docker</small></td>
+                <td>
+                    <div class="summary">Built a multi-agent QA framework and voice-AI calling system with LLM scoring, and developed Gemini-powered pipelines for real-time content generation and chatbot assistance, all backed by FastAPI/Flask backends and Dockerized deployments.</div>
+                    <div class="meta"><b>Strengths:</b> AI orchestration; FastAPI/Flask backend; Gemini integration; Scalable voice AI</div>
+                    <div class="meta"><b>Concerns:</b> Limited PostgreSQL/Redis usage; Sparse async or concurrency details; No explicit testing or observability</div>
+                    <div class="meta"><b>GitHub:</b> @why-aditi: 49 maintained public repos, 23 Python/AI-relevant repos (e.g., Understudy, PitchPerfect, hinglish-turn-detector, linkedin-profile-api); last push 2026-10-01, 17 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#16</td>
+                <td>
+                    <strong>ABHINAV MISHRA</strong><br>
+                    <small>candidate_10.pdf | <a href="https://github.com/AbhinavMishra32" target="_blank">AbhinavMishra32</a></small><br>
+                    <span class="badge badge-warn">-6 wrapper/depth penalty</span>
+                </td>
+                <td class="score">72<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>22</b>/40</span>
+                        <span>Py/BE: <b>26</b>/30</span>
+                        <span>Cloud/FS: <b>10</b>/15</span>
+                        <span>GitHub: <b>10</b>/10</span>
+                        <span>Eng: <b>4</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, PostgreSQL, Redis, SQL, LangGraph, RAG, AI Agents, OpenAI API, Azure</small></td>
+                <td>
+                    <div class="summary">Built AI-centric platforms such as an agent-driven scheduling system and the Construct IDE using LangGraph, with persistent state, orchestration, and observability, while also delivering FastAPI back-ends, Redis queues, and Azure cloud automation.</div>
+                    <div class="meta"><b>Strengths:</b> Deep experience with agentic AI frameworks (LangGraph, AI calling orchestration); Strong Python/FastAPI backend skills with Redis and PostgreSQL; End-to-end cloud deployment on Azure and CI/CD automation; Robust testing and observability pipelines</div>
+                    <div class="meta"><b>Concerns:</b> Shallow AI project descriptions lacking vector DB, tool-calling, or evaluation details (-6 pts); Limited explicit mention of async programming patterns; No clear evidence of large-scale distributed queue systems (Kafka/Celery)</div>
+                    <div class="meta"><b>GitHub:</b> @AbhinavMishra32: 49 maintained public repos, 10 Python/AI-relevant repos (e.g., spar, hackathon-datahub-schemaguard, fxpnt, xitecoin); last push 2026-10-05, 6 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#17</td>
+                <td>
+                    <strong>Arjun Kumar</strong><br>
+                    <small>candidate_08.pdf | <a href="https://github.com/arjunkumaritsme12" target="_blank">arjunkumaritsme12</a></small><br>
+                    <span class="badge badge-warn">-6 wrapper/depth penalty</span>
+                </td>
+                <td class="score">68<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>22</b>/40</span>
+                        <span>Py/BE: <b>26</b>/30</span>
+                        <span>Cloud/FS: <b>9</b>/15</span>
+                        <span>GitHub: <b>10</b>/10</span>
+                        <span>Eng: <b>1</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, Django, PostgreSQL, SQL, REST APIs, LangChain, LangGraph, RAG, AI Agents</small></td>
+                <td>
+                    <div class="summary">Implemented an end-to-end resume screening system with BERT embeddings, LangChain ranking, and a concurrent Django REST backend, and a multimodal deepfake detector using Vision Transformer, FastAPI async inference, and LangGraph orchestration.</div>
+                    <div class="meta"><b>Strengths:</b> Strong AI pipeline design with embeddings &amp; orchestration; Proficient in async Python backends (FastAPI/Django); Full-stack experience with React/Next.js and AWS CI/CD; Active GitHub (@arjunkumaritsme12, 13 Python/AI repos)</div>
+                    <div class="meta"><b>Concerns:</b> Shallow AI project descriptions lacking vector DB, tool-calling, or evaluation details (-6 pts); Limited evidence of testing/observability practices; No explicit containerization (Docker/K8s) shown</div>
+                    <div class="meta"><b>GitHub:</b> @arjunkumaritsme12: 24 maintained public repos, 13 Python/AI-relevant repos (e.g., ShiporaX, leadpulse-ai, primetrade_assignment, EduMind-AI-Adaptive-Learning-Mentor); last push 2026-09-27, 7 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#18</td>
+                <td>
+                    <strong>RAJ THUMAR</strong><br>
+                    <small>candidate_40.pdf | <a href="https://github.com/rthumar0903" target="_blank">rthumar0903</a></small><br>
+                    <span class="badge badge-warn">-6 wrapper/depth penalty</span>
+                </td>
+                <td class="score">66<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>22</b>/40</span>
+                        <span>Py/BE: <b>22</b>/30</span>
+                        <span>Cloud/FS: <b>13</b>/15</span>
+                        <span>GitHub: <b>5</b>/10</span>
+                        <span>Eng: <b>4</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, Flask, PostgreSQL, Redis, SQL, REST APIs, GraphQL, MCP, RAG, OpenAI API</small></td>
+                <td>
+                    <div class="summary">Designed and built an AI workflow orchestration engine that chains multi-step LLM calls (OpenAI, Gemini) with RAG, uses Kafka and Redis for async job handling, and adds scheduling, retries, and monitoring, while also delivering Python Flask integrations for ServiceNow automation.</div>
+                    <div class="meta"><b>Strengths:</b> Strong AI orchestration and RAG experience; Solid microservice and event-driven architecture; Proficient with PostgreSQL, Redis, and AWS deployment</div>
+                    <div class="meta"><b>Concerns:</b> Shallow AI project descriptions lacking vector DB, tool-calling, or evaluation details (-6 pts); Limited Python-centric backend depth beyond internship; No explicit testing framework mentioned</div>
+                    <div class="meta"><b>GitHub:</b> @rthumar0903: 10 maintained public repos, 1 Python/AI-relevant repos (e.g., whatsapp-bot); last push 2026-02-08, 0 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#19</td>
+                <td>
+                    <strong>SHUBHANSHU NAVADIYA</strong><br>
+                    <small>candidate_12.pdf | <a href="https://github.com/Shubhanshu-356" target="_blank">Shubhanshu-356</a></small><br>
+                    
+                </td>
+                <td class="score">64<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>34</b>/40</span>
+                        <span>Py/BE: <b>20</b>/30</span>
+                        <span>Cloud/FS: <b>4</b>/15</span>
+                        <span>GitHub: <b>5</b>/10</span>
+                        <span>Eng: <b>1</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, SQL, REST APIs, LangChain, LlamaIndex, CrewAI, AutoGen, LiveKit Agents, RAG</small></td>
+                <td>
+                    <div class="summary">Built end-to-end RAG pipelines with LangChain, LlamaIndex, Qdrant/Weaviate and deployed real-time AI interview agents using LiveKit and GPT-4o, plus AI-driven browser automation and 20+ multimodal POCs.</div>
+                    <div class="meta"><b>Strengths:</b> Strong RAG and multi-agent system experience; Proficient with FastAPI and REST API design; Hands-on with vector databases and LLM orchestration; CI/CD automation via GitHub Actions</div>
+                    <div class="meta"><b>Concerns:</b> Limited exposure to cloud platforms (GCP/AWS) and container orchestration; No explicit mention of Redis, Kafka, or advanced observability tools; Testing depth not demonstrated beyond skill listing</div>
+                    <div class="meta"><b>GitHub:</b> @Shubhanshu-356: 7 maintained public repos, 4 Python/AI-relevant repos (e.g., healthcare-plus-ai, AI_Layout_Generator, AI_GAME_REFEREE_CHATBOT, IBM-Applied-Data-Science-Project); last push 2026-04-17, 0 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#20</td>
+                <td>
+                    <strong>Vivek Shekhawat</strong><br>
+                    <small>candidate_39.pdf | <a href="https://github.com/Vivek1592002" target="_blank">Vivek1592002</a></small><br>
+                    
+                </td>
+                <td class="score">56<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>30</b>/40</span>
+                        <span>Py/BE: <b>13</b>/30</span>
+                        <span>Cloud/FS: <b>4</b>/15</span>
+                        <span>GitHub: <b>7</b>/10</span>
+                        <span>Eng: <b>2</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, Django, PostgreSQL, SQL, REST APIs, LangChain, LangGraph, RAG, pgvector, Vector Search</small></td>
+                <td>
+                    <div class="summary">Built a production RAG platform in Go that ingests documents, generates embeddings with Ollama, stores them in PostgreSQL with pgvector, and serves source-grounded answers via async APIs, while also creating a Python-based conversational Timesheet Bot that orchestrates multi-step workflows with LangGraph.</div>
+                    <div class="meta"><b>Strengths:</b> Deep AI pipeline design; Concurrent backend engineering; Full-stack integration; Strong security practices</div>
+                    <div class="meta"><b>Concerns:</b> Limited Python backend experience; No cloud deployment evidence; No testing evidence</div>
+                    <div class="meta"><b>GitHub:</b> @Vivek1592002: 12 maintained public repos, 4 Python/AI-relevant repos (e.g., finalYearProject, chatappbackend, djangotweetsapp, FridayAi); last push 2026-08-14, 1 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#21</td>
+                <td>
+                    <strong>HARSHA A</strong><br>
+                    <small>candidate_15.pdf | —</small><br>
+                    <span class="badge badge-warn">-8 wrapper/depth penalty</span>
+                </td>
+                <td class="score">55<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>20</b>/40</span>
+                        <span>Py/BE: <b>24</b>/30</span>
+                        <span>Cloud/FS: <b>10</b>/15</span>
+                        <span>GitHub: <b>0</b>/10</span>
+                        <span>Eng: <b>1</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, PostgreSQL, SQL, REST APIs, pgvector, Embeddings, TensorFlow, Azure, Docker</small></td>
+                <td>
+                    <div class="summary">Built an AI-powered attendance system using YOLOv8-Face and InsightFace, storing face embeddings in PostgreSQL pgvector and exposing FastAPI endpoints for real-time attendance processing and reporting.</div>
+                    <div class="meta"><b>Strengths:</b> AI integration with vector DB; FastAPI backend; Full-stack experience; Medical imaging pipeline</div>
+                    <div class="meta"><b>Concerns:</b> Vector search is used for CV face embeddings rather than LLM/RAG/agentic workflows (-8 pts); Limited async usage; No CI/CD or observability</div>
+                    <div class="meta"><b>GitHub:</b> No public GitHub profile URL found on resume.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#22</td>
+                <td>
+                    <strong>ANNISHA S</strong><br>
+                    <small>candidate_23.pdf | <a href="https://github.com/annisha-atdoor" target="_blank">annisha-atdoor</a></small><br>
+                    <span class="badge badge-warn">-6 wrapper/depth penalty</span>
+                </td>
+                <td class="score">53<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>22</b>/40</span>
+                        <span>Py/BE: <b>24</b>/30</span>
+                        <span>Cloud/FS: <b>6</b>/15</span>
+                        <span>GitHub: <b>1</b>/10</span>
+                        <span>Eng: <b>0</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, PostgreSQL, SQL, REST APIs, LangGraph, OpenAI API, Groq, Azure, React</small></td>
+                <td>
+                    <div class="summary">Built an AI-driven CRM that transforms natural language into structured data using LangGraph and Groq LLM, integrated with FastAPI and React, and a role-based task management system powered by FastAPI and PostgreSQL.</div>
+                    <div class="meta"><b>Strengths:</b> AI system design; Full-stack development; FastAPI expertise; Azure certification</div>
+                    <div class="meta"><b>Concerns:</b> Shallow AI project descriptions lacking vector DB, tool-calling, or evaluation details (-6 pts); Limited cloud deployment experience; No explicit async or testing</div>
+                    <div class="meta"><b>GitHub:</b> @annisha-atdoor: 3 maintained public repos, 0 Python/AI-relevant repos (e.g., my-app, horosocpe, Horoscope); last push 2024-10-28, 0 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#23</td>
+                <td>
+                    <strong>PAVANI A</strong><br>
+                    <small>candidate_38.pdf | <a href="https://github.com/Pavani-A" target="_blank">Pavani-A</a></small><br>
+                    <span class="badge badge-warn">-10 wrapper/depth penalty</span>
+                </td>
+                <td class="score">52<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>8</b>/40</span>
+                        <span>Py/BE: <b>24</b>/30</span>
+                        <span>Cloud/FS: <b>8</b>/15</span>
+                        <span>GitHub: <b>10</b>/10</span>
+                        <span>Eng: <b>2</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, Django, Flask, PostgreSQL, SQL, REST APIs, TensorFlow, Scikit-learn, Docker</small></td>
+                <td>
+                    <div class="summary">Built AutoEval, a full-stack AI-powered evaluation platform that calls LLaMA for feedback, and developed backend services with FastAPI/Django, PostgreSQL, Docker, and CI/CD pipelines.</div>
+                    <div class="meta"><b>Strengths:</b> Python backend development; Full-stack integration with FastAPI/Django; CI/CD and Docker automation; AI model implementation (TensorFlow, LLaMA)</div>
+                    <div class="meta"><b>Concerns:</b> AI projects appear to be thin wrappers around LLM API calls without vector retrieval or agentic state (-10 pts); Limited cloud deployment experience; No advanced AI orchestration (RAG, agents)</div>
+                    <div class="meta"><b>GitHub:</b> @Pavani-A: 15 maintained public repos, 5 Python/AI-relevant repos (e.g., AI-Powered-Digital-Asset-Management, lenny-growth-assistant, handwritten-number-recognition, image_recognition); last push 2026-10-04, 6 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#24</td>
+                <td>
+                    <strong>P.V. Jayavardhana Sai</strong><br>
+                    <small>candidate_19.pdf | <a href="https://github.com/jayavard123" target="_blank">jayavard123</a></small><br>
+                    
+                </td>
+                <td class="score">51<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>21</b>/40</span>
+                        <span>Py/BE: <b>13</b>/30</span>
+                        <span>Cloud/FS: <b>10</b>/15</span>
+                        <span>GitHub: <b>5</b>/10</span>
+                        <span>Eng: <b>2</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, Flask, SQL, RAG, AI Agents, Ollama, Transformers, PyTorch, TensorFlow, Scikit-learn</small></td>
+                <td>
+                    <div class="summary">Candidate built a RAG system using Ollama with multi-step pipelines, prompt orchestration, and failure mode mitigation (hallucination/drift), alongside a full-stack Python/React allocation platform and ML ocean data reconstruction research.</div>
+                    <div class="meta"><b>Strengths:</b> RAG implementation with specific failure mode handling (hallucination, context drift); Full-stack Python/React project with rule-based optimization for 1500+ users; Research experience in ML model evaluation and data pipelines (INCOIS)</div>
+                    <div class="meta"><b>Concerns:</b> Lack of explicit vector database (e.g., pgvector, Chroma) or reranking details in RAG project; No evidence of async programming (asyncio) or advanced backend patterns like queues/caching; Cloud experience limited to AWS certification and Docker, lacking Kubernetes or CI/CD pipeline details</div>
+                    <div class="meta"><b>GitHub:</b> @jayavard123: 8 maintained public repos, 6 Python/AI-relevant repos (e.g., Cognitive-Resonance-AI, Python-patterns, VOICE-RECOGNITION, Tic-tac-toe); last push 2025-10-26, 0 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#25</td>
+                <td>
+                    <strong>Thejeshwaar Paasila</strong><br>
+                    <small>candidate_26.pdf | <a href="https://github.com/tejaharleys" target="_blank">tejaharleys</a></small><br>
+                    <span class="badge badge-warn">-10 wrapper/depth penalty</span>
+                </td>
+                <td class="score">48<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>13</b>/40</span>
+                        <span>Py/BE: <b>20</b>/30</span>
+                        <span>Cloud/FS: <b>11</b>/15</span>
+                        <span>GitHub: <b>2</b>/10</span>
+                        <span>Eng: <b>2</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, Flask, PostgreSQL, SQL, REST APIs, SQLAlchemy, RAG, OpenAI API, Gemini, Hugging Face</small></td>
+                <td>
+                    <div class="summary">Built Flask-based backend services for AI-enabled products, integrating multimodal LLM pipelines (speech-to-text, contextual conversation orchestration) and Gemini-driven summarization while managing PostgreSQL data and real-time APIs.</div>
+                    <div class="meta"><b>Strengths:</b> Full-stack expertise with React Native and Flask; Hands-on LLM API integration and prompt engineering; Experience building real-time and geospatial systems; Familiar with GCP, Docker, and CI/CD pipelines</div>
+                    <div class="meta"><b>Concerns:</b> AI projects appear to be thin wrappers around LLM API calls without vector retrieval or agentic state (-10 pts); Limited async/FastAPI experience; No explicit testing or observability frameworks</div>
+                    <div class="meta"><b>GitHub:</b> @tejaharleys: 2 maintained public repos, 0 Python/AI-relevant repos (e.g., Nexora-SAAS, astro-supabase-starter); last push 2026-05-23, 0 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#26</td>
+                <td>
+                    <strong>M SAI KUSHITH</strong><br>
+                    <small>candidate_06.pdf | <a href="https://github.com/SaiKushith" target="_blank">SaiKushith</a></small><br>
+                    <span class="badge badge-warn">-10 wrapper/depth penalty</span>
+                </td>
+                <td class="score">43<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>16</b>/40</span>
+                        <span>Py/BE: <b>20</b>/30</span>
+                        <span>Cloud/FS: <b>3</b>/15</span>
+                        <span>GitHub: <b>4</b>/10</span>
+                        <span>Eng: <b>0</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, Django, PostgreSQL, SQL, REST APIs, LangChain, LangGraph, RAG, Scikit-learn</small></td>
+                <td>
+                    <div class="summary">Built an OCR document verification pipeline combining Tesseract OCR and Nvidia NIM LLM, achieving 95% extraction accuracy, and developed a geospatial intelligence module with real-time satellite data using Google Earth Engine, all backed by a Django/FastAPI backend and PostgreSQL database.</div>
+                    <div class="meta"><b>Strengths:</b> End-to-end AI system development; Full-stack integration; Production experience; Strong Python &amp; FastAPI skills</div>
+                    <div class="meta"><b>Concerns:</b> AI projects appear to be thin wrappers around LLM API calls without vector retrieval or agentic state (-10 pts); Limited cloud deployment experience; No evidence of async or caching</div>
+                    <div class="meta"><b>GitHub:</b> @SaiKushith: 4 maintained public repos, 1 Python/AI-relevant repos (e.g., Cancer-Prediction-); last push 2026-06-06, 0 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#27</td>
+                <td>
+                    <strong>Atul Kumar</strong><br>
+                    <small>candidate_25.pdf | <a href="https://github.com/atulkumar2025" target="_blank">atulkumar2025</a></small><br>
+                    <span class="badge badge-warn">-10 wrapper/depth penalty</span>
+                </td>
+                <td class="score">41<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>10</b>/40</span>
+                        <span>Py/BE: <b>14</b>/30</span>
+                        <span>Cloud/FS: <b>8</b>/15</span>
+                        <span>GitHub: <b>8</b>/10</span>
+                        <span>Eng: <b>1</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, Flask, SQL, REST APIs, Gemini, Groq, Transformers, Scikit-learn, GCP, C++</small></td>
+                <td>
+                    <div class="summary">Candidate built several Streamlit-based AI applications (ATS, Question Generator, Chatbot) that primarily wrap LLM APIs (Gemini, Groq) with minimal backend logic, alongside a Flask-based summarization tool using standard NLP models.</div>
+                    <div class="meta"><b>Strengths:</b> Practical experience with GCP and Vertex AI via virtual internship; Demonstrated ability to deploy Python apps to Render; Solid foundation in DSA with 400+ LeetCode problems; Active GitHub (@atulkumar2025, 7 Python/AI repos)</div>
+                    <div class="meta"><b>Concerns:</b> AI projects appear to be thin wrappers around LLM API calls without vector retrieval or agentic state (-10 pts); Lack of complex AI systems like RAG, vector DBs, or agent orchestration; Backend experience is limited to basic Flask/REST APIs without async or database optimization</div>
+                    <div class="meta"><b>GitHub:</b> @atulkumar2025: 9 maintained public repos, 7 Python/AI-relevant repos (e.g., SmartATS, QuickText, InStocks, House-Price-Prediction); last push 2026-08-02, 5 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#28</td>
+                <td>
+                    <strong>VIKRAM MADHYASTA</strong><br>
+                    <small>candidate_29.pdf | <a href="https://github.com/vikrammadhyasta" target="_blank">vikrammadhyasta</a></small><br>
+                    <span class="badge badge-warn">-10 wrapper/depth penalty</span>
+                </td>
+                <td class="score">39<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>6</b>/40</span>
+                        <span>Py/BE: <b>9</b>/30</span>
+                        <span>Cloud/FS: <b>12</b>/15</span>
+                        <span>GitHub: <b>10</b>/10</span>
+                        <span>Eng: <b>2</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, SQL, REST APIs, OpenAI API, Scikit-learn, AWS, Docker, Kubernetes, CI/CD, Observability</small></td>
+                <td>
+                    <div class="summary">Built a serverless ML inference API for crop yield prediction using scikit-learn and Python, and integrated an OpenAI-powered log analyzer into a Jenkins CI/CD pipeline to automate failure triage.</div>
+                    <div class="meta"><b>Strengths:</b> Strong AWS and cloud-native infrastructure expertise; Hands-on CI/CD and GitOps automation; Python development for serverless APIs; Experience with observability and monitoring</div>
+                    <div class="meta"><b>Concerns:</b> AI projects appear to be thin wrappers around LLM API calls without vector retrieval or agentic state (-10 pts); Lack of FastAPI/async backend experience; No demonstrated use of advanced AI architectures (RAG, agents, vector stores)</div>
+                    <div class="meta"><b>GitHub:</b> @vikrammadhyasta: 11 maintained public repos, 5 Python/AI-relevant repos (e.g., smart-expense-tracker-api, AgriTech, cfa-lab-aws, incident-management-system); last push 2026-10-03, 5 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#29</td>
+                <td>
+                    <strong>DORNIPADU KARTHIKA CHAITRIKA</strong><br>
+                    <small>candidate_24.pdf | <a href="https://github.com/KarthikaDornipadu" target="_blank">KarthikaDornipadu</a></small><br>
+                    <span class="badge badge-warn">-6 wrapper/depth penalty</span>
+                </td>
+                <td class="score">38<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>16</b>/40</span>
+                        <span>Py/BE: <b>13</b>/30</span>
+                        <span>Cloud/FS: <b>1</b>/15</span>
+                        <span>GitHub: <b>8</b>/10</span>
+                        <span>Eng: <b>0</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, Django, Flask, RAG, AI Agents, Vector Search, Embeddings, Gemini, JavaScript</small></td>
+                <td>
+                    <div class="summary">Built a Retrieval-Augmented Generation chat assistant using Gemini API, vector embeddings, and session-based memory, and delivered a Streamlit diabetes prediction app with a Flask-based hate-speech classifier.</div>
+                    <div class="meta"><b>Strengths:</b> RAG-based AI assistant development; Python web app experience (Flask, Django, Streamlit); Machine-learning model building and evaluation; Strong academic performance in AI/ML</div>
+                    <div class="meta"><b>Concerns:</b> Shallow AI project descriptions lacking vector DB, tool-calling, or evaluation details (-6 pts); Limited exposure to production backend infra (PostgreSQL, Redis, async); No demonstrated cloud deployment, containerization, or CI/CD</div>
+                    <div class="meta"><b>GitHub:</b> @KarthikaDornipadu: 20 maintained public repos, 13 Python/AI-relevant repos (e.g., Diabetes-Prediction-ML, hate-speech-detection-tweets-ml, alpha-pulse-financial-analytics, retail-analytics-rfm-analysis); last push 2026-06-06, 0 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#30</td>
+                <td>
+                    <strong>Aswin Raj R</strong><br>
+                    <small>candidate_49.pdf | <a href="https://github.com/Aswinx0" target="_blank">Aswinx0</a></small><br>
+                    <span class="badge badge-warn">-6 wrapper/depth penalty</span>
+                </td>
+                <td class="score">35<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>16</b>/40</span>
+                        <span>Py/BE: <b>4</b>/30</span>
+                        <span>Cloud/FS: <b>5</b>/15</span>
+                        <span>GitHub: <b>10</b>/10</span>
+                        <span>Eng: <b>0</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, SQL, REST APIs, LangChain, RAG, OpenAI API, Transformers, TensorFlow, AWS, React</small></td>
+                <td>
+                    <div class="summary">Developed Talkwise AI, an AI meeting assistant that combines LLMs, RAG, and real-time speech-to-text for live transcription and contextual Q&amp;A, and built a federated learning plant-disease detection model using Vision Transformers; also contributed full-stack features for a MERN car-rental platform with an LLM chatbot.</div>
+                    <div class="meta"><b>Strengths:</b> Strong AI prototyping with LangChain and RAG; Full-stack development experience (React/Node); Proven problem-solving record (650+ coding challenges); Active GitHub (@Aswinx0, 8 Python/AI repos)</div>
+                    <div class="meta"><b>Concerns:</b> Shallow AI project descriptions lacking vector DB, tool-calling, or evaluation details (-6 pts); Limited production-grade Python backend experience; No demonstrated cloud deployment or CI/CD pipelines</div>
+                    <div class="meta"><b>GitHub:</b> @Aswinx0: 13 maintained public repos, 8 Python/AI-relevant repos (e.g., hiver, AI-car-rental, multimodal-rag-pipeline-, Notification_system); last push 2026-09-17, 6 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="rank">#31</td>
+                <td>
+                    <strong>Saif Ali Nagori</strong><br>
+                    <small>candidate_36.pdf | <a href="https://github.com/Nagorisaifali" target="_blank">Nagorisaifali</a></small><br>
+                    <span class="badge badge-warn">-6 wrapper/depth penalty</span>
+                </td>
+                <td class="score">34<small>/100</small></td>
+                <td>
+                    <div class="breakdown">
+                        <span>AI/RAG: <b>11</b>/40</span>
+                        <span>Py/BE: <b>10</b>/30</span>
+                        <span>Cloud/FS: <b>4</b>/15</span>
+                        <span>GitHub: <b>9</b>/10</span>
+                        <span>Eng: <b>0</b>/5</span>
+                    </div>
+                </td>
+                <td><small>Python, FastAPI, Flask, SQL, REST APIs, RAG, React, Node.js, C++, JavaScript</small></td>
+                <td>
+                    <div class="summary">Developed an AI-powered EV knowledge bot using Flask and LLM/RAG techniques to retrieve information from a SQLite database, and built a MERN stack turf booking system deployed on Render.</div>
+                    <div class="meta"><b>Strengths:</b> Python &amp; Flask experience; Full-stack MERN development; AI RAG implementation; Cloud deployment on Render</div>
+                    <div class="meta"><b>Concerns:</b> Shallow AI project descriptions lacking vector DB, tool-calling, or evaluation details (-6 pts); Limited depth in AI system architecture; No advanced backend features like async or PostgreSQL</div>
+                    <div class="meta"><b>GitHub:</b> @Nagorisaifali: 26 maintained public repos, 5 Python/AI-relevant repos (e.g., Loan_Approval_Predictor, Car_Price_Prediction, Electric-vehicle-knowledge-bot-, BugSpotter-AI-Powered-Code-Reviewer); last push 2026-09-11, 2 repos active in 90d.</div>
+                </td>
+            </tr>
+            
+  </tbody>
+</table>
+<h2>Rejected Candidates (19)</h2>
+<table>
+  <thead>
+    <tr>
+      <th>File</th>
+      <th>Candidate</th>
+      <th>Rejection Reasons</th>
+      <th>Matched Skills</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+            <tr>
+                <td>candidate_01.pdf</td>
+                <td><strong>Kartikay Sinha</strong></td>
+                <td><span class="badge badge-reject">No evidence of Python stack, No AI/agentic project evidence</span></td>
+                <td><small>SQL, REST APIs, Docker, React, Next.js, TypeScript, Node.js, C++, JavaScript, MongoDB</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_02.pdf</td>
+                <td><strong>SHIVAM RAJ</strong></td>
+                <td><span class="badge badge-reject">No evidence of Python stack, No AI/agentic project evidence</span></td>
+                <td><small>REST APIs, Azure, Docker, CI/CD, React, Next.js, TypeScript, Node.js, JavaScript</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_03.pdf</td>
+                <td><strong>Agam Jain</strong></td>
+                <td><span class="badge badge-reject">No AI/agentic project evidence</span></td>
+                <td><small>Python, FastAPI, PostgreSQL, Redis, SQL, REST APIs, GraphQL, Docker, React, Next.js, TypeScript, Node.js, Java, Spring Boot, C++, JavaScript, MongoDB</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_04.pdf</td>
+                <td><strong>Yuvaraj R</strong></td>
+                <td><span class="badge badge-reject">No AI/agentic project evidence</span></td>
+                <td><small>Python, Django, PostgreSQL, SQL, REST APIs, Scikit-learn, Docker, CI/CD, Java</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_05.pdf</td>
+                <td><strong>VISHWAS BADIGER</strong></td>
+                <td><span class="badge badge-reject">No AI/agentic project evidence</span></td>
+                <td><small>Python, Flask, SQL, REST APIs, Scikit-learn, React, Node.js, Java, Spring Boot, C++, JavaScript, MongoDB</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_09.pdf</td>
+                <td><strong>KRISHAN KANT</strong></td>
+                <td><span class="badge badge-reject">No evidence of Python stack</span></td>
+                <td><small>PostgreSQL, Redis, SQL, REST APIs, LangChain, RAG, Vector Search, OpenAI API, Docker, React, TypeScript, Automated Testing, Kafka, Observability, Microservices, Java, Spring Boot, C++, JavaScript, MongoDB</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_11.pdf</td>
+                <td><strong>MD AZIZUL ISLAM</strong></td>
+                <td><span class="badge badge-reject">No evidence of Python stack</span></td>
+                <td><small>PostgreSQL, Redis, SQL, REST APIs, RAG, pgvector, Vector Search, Embeddings, OpenAI API, AWS, CI/CD, React, TypeScript, Node.js, Observability, Microservices, C++, JavaScript, MongoDB</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_14.pdf</td>
+                <td><strong>JAYA NANDI</strong></td>
+                <td><span class="badge badge-reject">No AI/agentic project evidence</span></td>
+                <td><small>Python, SQL, REST APIs, AWS, React, Java, JavaScript</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_18.pdf</td>
+                <td><strong>Harshit Kumar Mishra</strong></td>
+                <td><span class="badge badge-reject">No evidence of Python stack, No AI/agentic project evidence</span></td>
+                <td><small>PostgreSQL, Redis, SQL, GraphQL, GCP, AWS, Docker, CI/CD, React, Next.js, TypeScript, Node.js, Automated Testing, Observability, Microservices, C++, JavaScript, MongoDB</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_20.pdf</td>
+                <td><strong>PRIYA R</strong></td>
+                <td><span class="badge badge-reject">No AI/agentic project evidence</span></td>
+                <td><small>Python, SQL, React, JavaScript</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_21.pdf</td>
+                <td><strong>MANOJ KUMAR K R</strong></td>
+                <td><span class="badge badge-reject">No AI/agentic project evidence</span></td>
+                <td><small>Python, Flask, SQL, REST APIs, Hugging Face, PyTorch, TensorFlow, Scikit-learn, React, Java</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_27.pdf</td>
+                <td><strong>Gayathri Palraj</strong></td>
+                <td><span class="badge badge-reject">No AI/agentic project evidence</span></td>
+                <td><small>Python, SQL, REST APIs, CI/CD, React, TypeScript, Node.js, Java, JavaScript, MongoDB</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_31.pdf</td>
+                <td><strong>Shreya Chauhan</strong></td>
+                <td><span class="badge badge-reject">No evidence of Python stack, No AI/agentic project evidence</span></td>
+                <td><small>Redis, SQL, REST APIs, React, Node.js, Kafka, Microservices, Java, Spring Boot, C++, JavaScript, MongoDB</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_32.pdf</td>
+                <td><strong>Mukul Pal</strong></td>
+                <td><span class="badge badge-reject">No evidence of Python stack</span></td>
+                <td><small>PostgreSQL, Redis, REST APIs, OpenAI API, AWS, Docker, CI/CD, React, Next.js, TypeScript, Node.js, BullMQ, JavaScript, MongoDB</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_34.pdf</td>
+                <td><strong>NISARGA H. S.</strong></td>
+                <td><span class="badge badge-reject">No AI/agentic project evidence</span></td>
+                <td><small>Python, SQL, REST APIs, CI/CD, Node.js, Automated Testing, Observability, Microservices, Java, Spring Boot</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_42.pdf</td>
+                <td><strong>ANJALI PATIL</strong></td>
+                <td><span class="badge badge-reject">No evidence of Python stack, No AI/agentic project evidence</span></td>
+                <td><small>PostgreSQL, Redis, SQL, REST APIs, Docker, Microservices, Java, Spring Boot, JavaScript</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_45.pdf</td>
+                <td><strong>Parshuram Kumar</strong></td>
+                <td><span class="badge badge-reject">No AI/agentic project evidence</span></td>
+                <td><small>Python, Django, Flask, Redis, SQL, REST APIs, GraphQL, AWS, Azure, Docker, CI/CD, React, Node.js, Kafka, C++, JavaScript, MongoDB</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_46.pdf</td>
+                <td><strong>AABHAR GUPTA</strong></td>
+                <td><span class="badge badge-reject">No evidence of Python stack, No AI/agentic project evidence</span></td>
+                <td><small>PostgreSQL, Redis, REST APIs, GCP, CI/CD, React, Node.js, Automated Testing, JavaScript, MongoDB</small></td>
+            </tr>
+            
+            <tr>
+                <td>candidate_48.pdf</td>
+                <td><strong>NIDHI KM</strong></td>
+                <td><span class="badge badge-reject">No AI/agentic project evidence</span></td>
+                <td><small>Python, SQL, REST APIs, TensorFlow, AWS, React, Java, Spring Boot, JavaScript</small></td>
+            </tr>
+            
+  </tbody>
+</table>
+</body>
+</html>

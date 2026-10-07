@@ -1,0 +1,20 @@
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Archive bundles (extracted resumes live in ./resumes/)
+*.zip
+
